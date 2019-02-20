@@ -13,11 +13,32 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // prepare json data
+        let json: [String: Any] = ["requestType": "authentication",
+                                   "username": "test","password": "1234omar"]
         
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
+        // create post request
+        let url = URL(string: "http://localhost:8080")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
         
-        // Do any additional setup after loading the view.
-    }
+        // insert json data to the request
+        request.httpBody = jsonData
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                print(error?.localizedDescription ?? "No data")
+                return
+            }
+            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+            if let responseJSON = responseJSON as? [String: Any] {
+                print(responseJSON)
+            }
+        }
+        
+        task.resume()
     
 
     /*
@@ -32,3 +53,4 @@ class SecondViewController: UIViewController {
 
 }
 
+}

@@ -13,7 +13,6 @@
 		93DA8F1121777D8200B8F8D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93DA8F0F21777D8200B8F8D8 /* Main.storyboard */; };
 		93DA8F1321777D8200B8F8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93DA8F1221777D8200B8F8D8 /* Assets.xcassets */; };
 		93DA8F1621777D8200B8F8D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93DA8F1421777D8200B8F8D8 /* LaunchScreen.storyboard */; };
-		93DA8F1E21779C6600B8F8D8 /* UiViewGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DA8F1D21779C6600B8F8D8 /* UiViewGradient.swift */; };
 		93DA8F202177A2E300B8F8D8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DA8F1F2177A2E300B8F8D8 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		93DA8F1221777D8200B8F8D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93DA8F1521777D8200B8F8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93DA8F1721777D8200B8F8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93DA8F1D21779C6600B8F8D8 /* UiViewGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewGradient.swift; sourceTree = "<group>"; };
 		93DA8F1F2177A2E300B8F8D8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +63,6 @@
 				93273ABA21A2DBE8001665FC /* LoginViewController.swift */,
 				93DA8F0F21777D8200B8F8D8 /* Main.storyboard */,
 				93DA8F1221777D8200B8F8D8 /* Assets.xcassets */,
-				93DA8F1D21779C6600B8F8D8 /* UiViewGradient.swift */,
 				93DA8F1421777D8200B8F8D8 /* LaunchScreen.storyboard */,
 				93DA8F1721777D8200B8F8D8 /* Info.plist */,
 				93DA8F1F2177A2E300B8F8D8 /* Constant.swift */,
@@ -144,7 +141,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93DA8F1E21779C6600B8F8D8 /* UiViewGradient.swift in Sources */,
 				93DA8F0E21777D8200B8F8D8 /* HomeViewController.swift in Sources */,
 				93DA8F0C21777D8200B8F8D8 /* AppDelegate.swift in Sources */,
 				93273ABB21A2DBE8001665FC /* LoginViewController.swift in Sources */,

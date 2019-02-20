@@ -38,10 +38,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvR-LT-q3n">
-                                <rect key="frame" x="99" y="612" width="176" height="18"/>
+                                <rect key="frame" x="105" y="608" width="176" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="© 2018. All rights reserved.">
+                                    <fragment content="© 2019. All rights reserved.">
                                         <attributes>
                                             <font key="NSFont" size="14" name=".SFNSText"/>
                                         </attributes>
