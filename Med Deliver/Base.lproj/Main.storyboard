@@ -811,7 +811,6 @@
         <image name="plusLogo" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ubc-ba-afU"/>
         <segue reference="otf-eP-R4E"/>
         <segue reference="De3-wL-efG"/>
         <segue reference="8CH-ca-Deo"/>
