@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Index View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Med_Deliver" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Index View Controller" customClass="ViewController" customModule="Med_Deliver" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="965.60000000000002" y="816.34182908545733"/>
         </scene>
-        <!--View Controller-->
+        <!--Registration View Controller-->
         <scene sceneID="Yf0-lJ-CB6">
             <objects>
-                <viewController id="edn-TY-zRC" sceneMemberID="viewController">
+                <viewController id="edn-TY-zRC" userLabel="Registration View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p45-Of-1j5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,10 +219,10 @@
             </objects>
             <point key="canvasLocation" x="2340" y="596"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Sign in Controller-->
         <scene sceneID="5rT-zY-VA1">
             <objects>
-                <viewController id="bIL-qI-YdB" customClass="SecondViewController" customModule="Med_Deliver" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" id="bIL-qI-YdB" userLabel="Sign in Controller" customClass="SignInViewController" customModule="Med_Deliver" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VKd-QE-fgi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -323,16 +323,20 @@
                             <outletCollection property="gestureRecognizers" destination="la7-rn-deq" appends="YES" id="OeD-ZE-F8x"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="EmailAddressTextField" destination="b52-da-jsw" id="HvS-Zl-9VC"/>
+                        <outlet property="PasswordTextField" destination="SnV-dA-OFr" id="oUu-Qa-ZDJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1vd-Fn-WMw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="la7-rn-deq"/>
             </objects>
             <point key="canvasLocation" x="966" y="-166"/>
         </scene>
-        <!--View Controller-->
+        <!--Password Reset Controller-->
         <scene sceneID="o3C-cQ-3uV">
             <objects>
-                <viewController id="YxM-VH-1Xt" sceneMemberID="viewController">
+                <viewController id="YxM-VH-1Xt" userLabel="Password Reset Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S1Y-2l-un1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -417,10 +421,10 @@
             </objects>
             <point key="canvasLocation" x="2417" y="-337"/>
         </scene>
-        <!--Profile-->
+        <!--Profile View Controller-->
         <scene sceneID="0i5-Xb-vdk">
             <objects>
-                <viewController id="c42-mx-SnH" sceneMemberID="viewController">
+                <viewController id="c42-mx-SnH" userLabel="Profile View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OT5-6e-Rsc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -458,10 +462,10 @@
             </objects>
             <point key="canvasLocation" x="3156" y="1369.5652173913045"/>
         </scene>
-        <!--Home-->
+        <!--Home View Controller-->
         <scene sceneID="HUh-mR-5r2">
             <objects>
-                <viewController id="JNB-7Y-Yif" sceneMemberID="viewController">
+                <viewController id="JNB-7Y-Yif" userLabel="Home View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0CZ-OO-qrE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -509,11 +513,10 @@
             </objects>
             <point key="canvasLocation" x="3156" y="596"/>
         </scene>
-        <!--View Controller-->
+        <!--About MedDeliver View Controller-->
         <scene sceneID="eQ4-iI-K8J">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d1m-2L-caG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="0pe-Sj-Ot4" sceneMemberID="viewController">
+                <viewController id="0pe-Sj-Ot4" userLabel="About MedDeliver View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zvZ-cv-3Ed">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -531,13 +534,14 @@
                         <viewLayoutGuide key="safeArea" id="AJC-le-uWh"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d1m-2L-caG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8136.8000000000002" y="771.36431784107947"/>
         </scene>
-        <!--View Controller-->
+        <!--Terms and Conditions View Controller-->
         <scene sceneID="pFy-4q-RbG">
             <objects>
-                <viewController id="n60-sI-SQU" sceneMemberID="viewController">
+                <viewController id="n60-sI-SQU" userLabel="Terms and Conditions View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ekX-Wd-0cj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -559,10 +563,10 @@
             </objects>
             <point key="canvasLocation" x="8176.8000000000002" y="1558.4707646176912"/>
         </scene>
-        <!--Settings-->
+        <!--Navigation View Controller-->
         <scene sceneID="nk5-x9-HNk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jnQ-6N-lqD" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jnQ-6N-lqD" userLabel="Navigation View Controller" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="icons8-settings-30" id="hyO-Ld-M5z"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FjX-gL-d6z">
@@ -578,11 +582,10 @@
             </objects>
             <point key="canvasLocation" x="3816.8000000000002" y="1369.5652173913045"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="Npb-6C-r7K">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yYn-6s-I8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="NrB-vb-Xno" sceneMemberID="viewController">
+                <tableViewController id="NrB-vb-Xno" userLabel="Settings View Controller" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AJ4-u4-hLI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -723,13 +726,14 @@
                     </tableView>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="ejN-sm-PV8"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yYn-6s-I8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6430" y="1352"/>
         </scene>
-        <!--View Controller-->
+        <!--Help View Controller-->
         <scene sceneID="Dg4-8N-JKB">
             <objects>
-                <viewController id="J9L-KP-HpH" sceneMemberID="viewController">
+                <viewController id="J9L-KP-HpH" userLabel="Help View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hj4-0Z-wzh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -751,10 +755,10 @@
             </objects>
             <point key="canvasLocation" x="6431" y="2178"/>
         </scene>
-        <!--View Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="NAP-ww-Kb6">
             <objects>
-                <viewController id="zqh-VY-c38" sceneMemberID="viewController">
+                <viewController id="zqh-VY-c38" userLabel="Navigation Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h4h-R8-TEG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -807,8 +811,9 @@
         <image name="plusLogo" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FdZ-kx-p2h"/>
-        <segue reference="l2N-g0-EAy"/>
+        <segue reference="ubc-ba-afU"/>
+        <segue reference="otf-eP-R4E"/>
+        <segue reference="De3-wL-efG"/>
         <segue reference="8CH-ca-Deo"/>
     </inferredMetricsTieBreakers>
 </document>

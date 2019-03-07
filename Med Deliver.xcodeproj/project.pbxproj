@@ -289,13 +289,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 333G75955X;
+				DEVELOPMENT_TEAM = TFK38NR9BZ;
 				INFOPLIST_FILE = "Med Deliver/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.supathshrestha.Med-Deliver";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.supathshrestha.Med-Deliver1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,13 +307,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 333G75955X;
+				DEVELOPMENT_TEAM = TFK38NR9BZ;
 				INFOPLIST_FILE = "Med Deliver/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.supathshrestha.Med-Deliver";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.supathshrestha.Med-Deliver1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -8,8 +8,12 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SignInViewController: UIViewController {
 
+    @IBOutlet weak var EmailAddressTextField: UITextField!
+    
+    @IBOutlet weak var PasswordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
