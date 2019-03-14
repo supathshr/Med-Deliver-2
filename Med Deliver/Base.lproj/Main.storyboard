@@ -534,6 +534,28 @@
             </objects>
             <point key="canvasLocation" x="3622" y="815"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Yqd-9H-BBC">
+            <objects>
+                <viewController id="qXl-a5-AZm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mi3-Rc-bKS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFH-AO-X2H">
+                                <rect key="frame" x="165" y="184" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="OMAR"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Jqs-5U-X3B"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QvZ-Qb-SA6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6729" y="816"/>
+        </scene>
         <!--About MedDeliver View Controller-->
         <scene sceneID="eQ4-iI-K8J">
             <objects>
@@ -557,7 +579,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1m-2L-caG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7897" y="816"/>
+            <point key="canvasLocation" x="7897" y="815"/>
         </scene>
         <!--Terms and Conditions View Controller-->
         <scene sceneID="pFy-4q-RbG">
@@ -832,7 +854,7 @@
         <image name="plusLogo" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oak-z3-rzf"/>
+        <segue reference="FdZ-kx-p2h"/>
         <segue reference="l2N-g0-EAy"/>
     </inferredMetricsTieBreakers>
 </document>
