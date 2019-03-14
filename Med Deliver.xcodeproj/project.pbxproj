@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93273ABB21A2DBE8001665FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93273ABA21A2DBE8001665FC /* LoginViewController.swift */; };
+		075676672236BE9800AE8144 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075676662236BE9800AE8144 /* IndexViewController.swift */; };
+		0756766B2236CE2700AE8144 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0756766A2236CE2700AE8144 /* HomePageViewController.swift */; };
+		07A1E37F22343E5A004CEC5E /* RegisterNewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A1E37E22343E5A004CEC5E /* RegisterNewAccountViewController.swift */; };
+		07F26A952236B2D600FE9896 /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F26A942236B2D600FE9896 /* PasswordResetViewController.swift */; };
+		93273ABB21A2DBE8001665FC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93273ABA21A2DBE8001665FC /* SignInViewController.swift */; };
 		93DA8F0C21777D8200B8F8D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DA8F0B21777D8200B8F8D8 /* AppDelegate.swift */; };
 		93DA8F0E21777D8200B8F8D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DA8F0D21777D8200B8F8D8 /* HomeViewController.swift */; };
 		93DA8F1121777D8200B8F8D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93DA8F0F21777D8200B8F8D8 /* Main.storyboard */; };
@@ -17,7 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		93273ABA21A2DBE8001665FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		075676662236BE9800AE8144 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		0756766A2236CE2700AE8144 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		07A1E37E22343E5A004CEC5E /* RegisterNewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNewAccountViewController.swift; sourceTree = "<group>"; };
+		07F26A942236B2D600FE9896 /* PasswordResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
+		93273ABA21A2DBE8001665FC /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		93DA8F0821777D8200B8F8D8 /* Med Deliver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Med Deliver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DA8F0B21777D8200B8F8D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93DA8F0D21777D8200B8F8D8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -60,8 +68,12 @@
 			children = (
 				93DA8F0B21777D8200B8F8D8 /* AppDelegate.swift */,
 				93DA8F0D21777D8200B8F8D8 /* HomeViewController.swift */,
-				93273ABA21A2DBE8001665FC /* LoginViewController.swift */,
+				93273ABA21A2DBE8001665FC /* SignInViewController.swift */,
 				93DA8F0F21777D8200B8F8D8 /* Main.storyboard */,
+				0756766A2236CE2700AE8144 /* HomePageViewController.swift */,
+				075676662236BE9800AE8144 /* IndexViewController.swift */,
+				07F26A942236B2D600FE9896 /* PasswordResetViewController.swift */,
+				07A1E37E22343E5A004CEC5E /* RegisterNewAccountViewController.swift */,
 				93DA8F1221777D8200B8F8D8 /* Assets.xcassets */,
 				93DA8F1421777D8200B8F8D8 /* LaunchScreen.storyboard */,
 				93DA8F1721777D8200B8F8D8 /* Info.plist */,
@@ -142,8 +154,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				93DA8F0E21777D8200B8F8D8 /* HomeViewController.swift in Sources */,
+				07F26A952236B2D600FE9896 /* PasswordResetViewController.swift in Sources */,
+				07A1E37F22343E5A004CEC5E /* RegisterNewAccountViewController.swift in Sources */,
 				93DA8F0C21777D8200B8F8D8 /* AppDelegate.swift in Sources */,
-				93273ABB21A2DBE8001665FC /* LoginViewController.swift in Sources */,
+				0756766B2236CE2700AE8144 /* HomePageViewController.swift in Sources */,
+				93273ABB21A2DBE8001665FC /* SignInViewController.swift in Sources */,
+				075676672236BE9800AE8144 /* IndexViewController.swift in Sources */,
 				93DA8F202177A2E300B8F8D8 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
