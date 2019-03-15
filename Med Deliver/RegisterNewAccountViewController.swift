@@ -27,63 +27,73 @@ class RegisterNewAccountViewController: UIViewController {
     
     @IBAction func CreateAccountButtonTapped(_ sender: Any) {
         print ("Create Account button tapped")
+        // prepare json data
+        let json: [String: Any] = [
+            "requestType": "register",
+            "username": FullNameTextField.text!,
+            "password": PasswordTextField.text!,
+            "firstName": "John",
+            "lastName": "Doe",
+            "dob": "1996-02-01",
+            "gender": "M"
+        ]
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
-        //Validate Required fields are not Empty
-        if (FullNameTextField.text?.isEmpty)! ||
-        (DateOfBirthTextField.text?.isEmpty)! ||
-        (EmailAddressTextField.text?.isEmpty)! ||
-        (PasswordTextField.text?.isEmpty)!
-        {
-            //Display Alert Message and Return
-            displayMessage(userMessage: "All fields are required to be filled in")
-            return
-        }
-        //Validate Password
-        if((PasswordTextField.text?.elementsEqual(ConfirmPasswordTextField.text!))! != true)
-            
-        {
-            //Display Alert Message and Return
-            displayMessage(userMessage: "Make sure your passwords match")
+        // create post request
+        let url = URL(string: "http://localhost:8080")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        
+        // insert json data to the request
+        request.httpBody = jsonData
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                print(error?.localizedDescription ?? "No data")
                 return
+            }
+            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+            if let responseJSON = responseJSON as? [String: Any] {
+                print(responseJSON)
+                let reason = responseJSON["reason"] as? String
+                let registered = responseJSON["registered"] as? String
+                if(registered == "true") {
+                    print("success!!")
+                    self.displayMessage(userMessage:"You've Successfully Registered. Please Sign in with your new Credentials.")
+                    DispatchQueue.main.async {
+                        let homeViewController =
+                        self.storyboard?.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
+                        let appDelegate = UIApplication.shared.delegate
+                        appDelegate?.window??.rootViewController = homeViewController
+                    }
+                    
+                } else {
+                    self.displayMessage(userMessage: reason ?? "Failed to register, please try again.")
+                    print("Register Failed!!")
+                }
+            }
         }
-        //Create Activity Indicator
-        let myActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+        task.resume()
         
-        // Position Activity Indicator in the center of the main view
-        myActivityIndicator.center = view.center
-        
-        // If needed, you can prevent Acivity Indicator from hiding when stopAnimating() is called
-        myActivityIndicator.hidesWhenStopped = false
-        
-        // Start Activity Indicator
-        myActivityIndicator.startAnimating()
-        
-        // Call stopAnimating() when need to stop activity indicator
-        //myActivityIndicator.stopAnimating()
-        
-        
-        view.addSubview(myActivityIndicator)
     }
-    
     
     func displayMessage(userMessage:String) -> Void {
         DispatchQueue.main.async
             {
-            let alertController =   UIAlertController(title: "Alert", message: userMessage, preferredStyle: .alert)
+                let alertController =   UIAlertController(title: "Alert", message: userMessage, preferredStyle: .alert)
                 
-            let OkAction = UIAlertAction(title: "OK", style: .default)
-            { (action:UIAlertAction!) in
-                //Code in this block will trigger OK when tapped
-                print("OK Button Tapped")
-                DispatchQueue.main.async {
-                    self.dismiss(animated: true, completion: nil)
+                let OkAction = UIAlertAction(title: "OK", style: .default)
+                { (action:UIAlertAction!) in
+                    //Code in this block will trigger OK when tapped
+                    print("OK Button Tapped")
+                    DispatchQueue.main.async {
+                        self.dismiss(animated: true, completion: nil)
+                    }
                 }
-    }
-    alertController.addAction(OkAction)
-    self.present(alertController, animated: true, completion: nil)
+                alertController.addAction(OkAction)
+                self.present(alertController, animated: true, completion: nil)
         }
     }
-    
     @IBAction func LoginButtonTapped(_ sender: Any) {
         print ("Login Button Tapped")
     }
@@ -92,16 +102,15 @@ class RegisterNewAccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-        // Do any additional setup after loading the view.
-    
+    // Do any additional setup after loading the view.
 
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
 }

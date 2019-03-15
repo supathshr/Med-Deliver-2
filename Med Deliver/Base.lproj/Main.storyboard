@@ -567,6 +567,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="HrN-dn-XlX">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nSl-9C-nc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="TabBarViewControl" id="K4G-cg-nMQ" userLabel="Tab Bar View Controller" customClass="TabBarViewContro" customModule="Med_Deliver" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0mw-9f-wXy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -579,13 +580,13 @@
                         <segue destination="jnQ-6N-lqD" kind="relationship" relationship="viewControllers" id="j8s-qa-8DI"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nSl-9C-nc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3622" y="816"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="nk5-x9-HNk">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lht-ev-ivK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jnQ-6N-lqD" userLabel="Navigation View Controller" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="icons8-settings-30" id="hyO-Ld-M5z"/>
                     <toolbarItems/>
@@ -598,7 +599,6 @@
                         <segue destination="zqh-VY-c38" kind="relationship" relationship="rootViewController" id="R9E-Ey-US7"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lht-ev-ivK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4282" y="1667"/>
         </scene>
