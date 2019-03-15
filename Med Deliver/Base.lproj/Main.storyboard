@@ -77,7 +77,7 @@
         <!--Registration View Controller-->
         <scene sceneID="Yf0-lJ-CB6">
             <objects>
-                <viewController storyboardIdentifier="RegisterNewAccountViewController" id="edn-TY-zRC" userLabel="Registration View Controller" customClass="RegisterNewAccountViewController" customModule="Med_Deliver" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterNewAccountViewController" id="edn-TY-zRC" userLabel="Registration View Controller" customClass="RegisterNewAccountViewController" customModule="Med_Deliver" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p45-Of-1j5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -216,11 +216,6 @@
                                     <segue destination="bIL-qI-YdB" kind="show" id="oak-z3-rzf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnO-Pg-rJa">
-                                <rect key="frame" x="122" y="103" width="130" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Hello Supath Again"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="I19-bn-PG1"/>
@@ -323,7 +318,6 @@
                                 </state>
                                 <connections>
                                     <action selector="SignInButtonTapped:" destination="bIL-qI-YdB" eventType="touchUpInside" id="r5O-GW-Hj6"/>
-                                    <segue destination="9Up-UK-2LI" kind="show" id="k8Z-1r-CW9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmT-Qy-uu0">
@@ -478,15 +472,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="googleMaps2" translatesAutoresizingMaskIntoConstraints="NO" id="gcG-zd-hp2">
-                                <rect key="frame" x="41" y="196" width="105" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlW-xz-C66">
-                                <rect key="frame" x="60" y="340" width="181" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="supath"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FTa-cW-q3i"/>
@@ -528,25 +513,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36R-FX-9bX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2932" y="1667"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="fQ6-aI-gMD">
-            <objects>
-                <tabBarController id="9Up-UK-2LI" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MTe-wL-1OG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="JNB-7Y-Yif" kind="relationship" relationship="viewControllers" id="Y2H-DC-LIc"/>
-                        <segue destination="c42-mx-SnH" kind="relationship" relationship="viewControllers" id="8q2-z6-JIc"/>
-                        <segue destination="jnQ-6N-lqD" kind="relationship" relationship="viewControllers" id="DY3-yt-gp8"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EKp-0m-kuP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3622" y="815"/>
         </scene>
         <!--About MedDeliver View Controller-->
         <scene sceneID="eQ4-iI-K8J">
@@ -597,6 +563,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybI-PP-Bls" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7897" y="1666"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="HrN-dn-XlX">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarViewControl" id="K4G-cg-nMQ" userLabel="Tab Bar View Controller" customClass="TabBarViewContro" customModule="Med_Deliver" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0mw-9f-wXy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JNB-7Y-Yif" kind="relationship" relationship="viewControllers" id="GDj-tJ-VhP"/>
+                        <segue destination="c42-mx-SnH" kind="relationship" relationship="viewControllers" id="qmb-rN-VzS"/>
+                        <segue destination="jnQ-6N-lqD" kind="relationship" relationship="viewControllers" id="j8s-qa-8DI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nSl-9C-nc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3622" y="816"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="nk5-x9-HNk">
@@ -846,7 +831,7 @@
         <image name="plusLogo" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FdZ-kx-p2h"/>
-        <segue reference="l2N-g0-EAy"/>
+        <segue reference="oak-z3-rzf"/>
+        <segue reference="De3-wL-efG"/>
     </inferredMetricsTieBreakers>
 </document>
