@@ -44,19 +44,19 @@ class SignInViewController: UIViewController {
                 if(registered == "true") {
                     print("logged in!!")
                     
-                    let authKey = responseJSON["authKey"] as? String
+              //      let authKey = responseJSON["authKey"] as? String
                     
                     //show the main view
                     DispatchQueue.main.async {
-                        let homeViewController =
-                            self.storyboard?.instantiateViewController(withIdentifier: "HomePageViewController") as! HomePageViewController
+                        let TabBarViewController =
+                            self.storyboard?.instantiateViewController(withIdentifier: "TabBarViewController") as! TabBarViewController
                         let appDelegate = UIApplication.shared.delegate
-                        appDelegate?.window??.rootViewController = homeViewController
+                        appDelegate?.window??.rootViewController = TabBarViewController
                     }
                     
                 } else {
                     self.displayMessage(userMessage: "Invalid username/password")
-                    print("Register Failed!!")
+                    print("Authentication Failed!!")
                 }
             }
         }

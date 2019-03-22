@@ -10,6 +10,7 @@
 		075676672236BE9800AE8144 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075676662236BE9800AE8144 /* IndexViewController.swift */; };
 		0756766B2236CE2700AE8144 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0756766A2236CE2700AE8144 /* HomePageViewController.swift */; };
 		07A1E37F22343E5A004CEC5E /* RegisterNewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A1E37E22343E5A004CEC5E /* RegisterNewAccountViewController.swift */; };
+		07D2350E22453A7700FE8AB4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2350D22453A7700FE8AB4 /* TabBarViewController.swift */; };
 		07F26A952236B2D600FE9896 /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F26A942236B2D600FE9896 /* PasswordResetViewController.swift */; };
 		93273ABB21A2DBE8001665FC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93273ABA21A2DBE8001665FC /* SignInViewController.swift */; };
 		93DA8F0C21777D8200B8F8D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DA8F0B21777D8200B8F8D8 /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 		075676662236BE9800AE8144 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		0756766A2236CE2700AE8144 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		07A1E37E22343E5A004CEC5E /* RegisterNewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNewAccountViewController.swift; sourceTree = "<group>"; };
+		07D2350D22453A7700FE8AB4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		07F26A942236B2D600FE9896 /* PasswordResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
 		93273ABA21A2DBE8001665FC /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		93DA8F0821777D8200B8F8D8 /* Med Deliver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Med Deliver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				93DA8F0B21777D8200B8F8D8 /* AppDelegate.swift */,
+				07D2350D22453A7700FE8AB4 /* TabBarViewController.swift */,
 				93DA8F0D21777D8200B8F8D8 /* HomeViewController.swift */,
 				93273ABA21A2DBE8001665FC /* SignInViewController.swift */,
 				93DA8F0F21777D8200B8F8D8 /* Main.storyboard */,
@@ -160,6 +163,7 @@
 				0756766B2236CE2700AE8144 /* HomePageViewController.swift in Sources */,
 				93273ABB21A2DBE8001665FC /* SignInViewController.swift in Sources */,
 				075676672236BE9800AE8144 /* IndexViewController.swift in Sources */,
+				07D2350E22453A7700FE8AB4 /* TabBarViewController.swift in Sources */,
 				93DA8F202177A2E300B8F8D8 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,15 +308,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 333G75955X;
+				DEVELOPMENT_TEAM = TFK38NR9BZ;
 				INFOPLIST_FILE = "Med Deliver/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.supathshrestha.Med-Deliver";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.supathshrestha.Med-Deliver1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -322,15 +328,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 333G75955X;
+				DEVELOPMENT_TEAM = TFK38NR9BZ;
 				INFOPLIST_FILE = "Med Deliver/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.supathshrestha.Med-Deliver";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.supathshrestha.Med-Deliver1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

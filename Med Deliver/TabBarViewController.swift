@@ -1,23 +1,15 @@
 //
-//  PasswordResetViewController.swift
+//  TabBarViewController.swift
 //  Med Deliver
 //
-//  Created by Omar El-Hamzawi on 11/03/2019.
+//  Created by Omar El-Hamzawi on 22/03/2019.
 //  Copyright © 2019 Supath Shrestha. All rights reserved.
 //
 
 import UIKit
 
-class PasswordResetViewController: UIViewController {
-    @IBOutlet weak var EmailAddressTextField: UITextField!
-    
-    @IBAction func RegisterHereButtonTapped(_ sender: Any) {
-        print ("Register Here button tapped")
-    }
-    @IBAction func BackButtonTapped(_ sender: Any) {
-        print ("Back button tapped")
-        self.dismiss(animated: true, completion: nil)
-    }
+class TabBarViewController: UITabBarController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

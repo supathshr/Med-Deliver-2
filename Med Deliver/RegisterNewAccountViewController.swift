@@ -10,9 +10,13 @@ import UIKit
 
 class RegisterNewAccountViewController: UIViewController {
     
-    @IBOutlet weak var FullNameTextField: UITextField!
+    @IBOutlet weak var FirstNameTextField: UITextField!
     
     @IBOutlet weak var DateOfBirthTextField: UITextField!
+    
+    @IBOutlet weak var LastNameTextFIeld: UITextField!
+    
+    @IBOutlet weak var GenderTextField: UITextField!
     
     @IBOutlet weak var EmailAddressTextField: UITextField!
     
@@ -30,12 +34,12 @@ class RegisterNewAccountViewController: UIViewController {
         // prepare json data
         let json: [String: Any] = [
             "requestType": "register",
-            "username": FullNameTextField.text!,
+            "username": EmailAddressTextField.text!,
             "password": PasswordTextField.text!,
-            "firstName": "John",
-            "lastName": "Doe",
-            "dob": "1996-02-01",
-            "gender": "M"
+            "firstName": FirstNameTextField.text!,
+            "lastName": LastNameTextFIeld.text!,
+            "dob": DateOfBirthTextField.text!,
+            "gender": GenderTextField.text!
         ]
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
