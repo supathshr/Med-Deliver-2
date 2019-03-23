@@ -465,6 +465,9 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.93333333333333335" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES"/>
+                        </accessibility>
                         <viewLayoutGuide key="safeArea" id="AJC-le-uWh"/>
                     </view>
                 </viewController>
@@ -490,6 +493,9 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.93333333333333335" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES"/>
+                        </accessibility>
                         <viewLayoutGuide key="safeArea" id="c9U-bf-S0z"/>
                     </view>
                 </viewController>
@@ -805,6 +811,9 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.93333333333333335" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES"/>
+                        </accessibility>
                         <viewLayoutGuide key="safeArea" id="Mae-KB-FW6"/>
                     </view>
                 </viewController>
