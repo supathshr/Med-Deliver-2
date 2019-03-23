@@ -724,8 +724,7 @@
         <!--View Controller-->
         <scene sceneID="Gj4-01-SIi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yqc-MG-vbv" sceneMemberID="firstResponder"/>
-                <viewController id="2tS-tK-wxu" customClass="ViewController" customModule="showPlaceOnMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2tS-tK-wxu" customClass="ViewController" customModule="Med_Deliver" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yi5-KG-M0R"/>
                         <viewControllerLayoutGuide type="bottom" id="rTP-iT-Wti"/>
@@ -761,6 +760,7 @@
                         <outlet property="myMapView" destination="UkZ-PT-EM1" id="7O6-JW-PVp"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yqc-MG-vbv" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4617" y="190"/>
         </scene>
@@ -786,7 +786,6 @@
         <!--Home-->
         <scene sceneID="v1f-6i-wZA">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="frB-zJ-Jf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cNH-t1-Xxa" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="icons8-home-page-30" id="8va-eV-Hay"/>
                     <toolbarItems/>
@@ -799,6 +798,7 @@
                         <segue destination="2tS-tK-wxu" kind="relationship" relationship="rootViewController" id="Gda-Bv-4UG"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="frB-zJ-Jf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3857" y="189"/>
         </scene>
