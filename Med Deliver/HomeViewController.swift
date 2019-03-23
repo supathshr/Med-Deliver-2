@@ -10,6 +10,7 @@
 import UIKit
 import MapKit
 
+
 class ViewController: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var myMapView: MKMapView!
@@ -89,7 +90,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
     }
     let annotationLocations = [
         
-         ["title": "University Medical Centre", "latitude": 51.296351, "longitude":1.062152],
+        ["title": "University Medical Centre", "latitude": 51.296351, "longitude":1.062152],
         ["title": "Boots Pharmacy", "latitude":  51.274631, "longitude":1.084672],
         ["title": "Superdrug Pharmacy", "latitude":  51.278395, "longitude":1.082779],
         ["title": "Lloyds Pharmacy in Sainsburys", "latitude":  51.284997, "longitude":1.085479],
