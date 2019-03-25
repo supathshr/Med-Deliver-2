@@ -9,11 +9,27 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 
-class ViewController: UIViewController, UISearchBarDelegate {
+class ViewController: UIViewController, UISearchBarDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var myMapView: MKMapView!
+    
+        let manager = CLLocationManager()
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        let location = locations[0]
+        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.02, 0.02)
+        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+        let region:MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
+//        myMapView.setRegion(region, animated: true)
+        
+        self.myMapView.showsUserLocation = true
+        
+    }
+    
     
     @IBAction func searchButton(_ sender: Any)
     {
@@ -81,6 +97,12 @@ class ViewController: UIViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         createAnnotations(locations: annotationLocations)
@@ -90,7 +112,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
     }
     let annotationLocations = [
         
-        ["title": "University Medical Centre", "latitude": 51.296351, "longitude":1.062152],
+        ["title": "University Medical Centre", "subtitle": "Paracetamols, Lemsip", "latitude": 51.296351, "longitude":1.062152],
         ["title": "Boots Pharmacy", "latitude":  51.274631, "longitude":1.084672],
         ["title": "Superdrug Pharmacy", "latitude":  51.278395, "longitude":1.082779],
         ["title": "Lloyds Pharmacy in Sainsburys", "latitude":  51.284997, "longitude":1.085479],
@@ -105,6 +127,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
         for location in locations {
             let annotations = MKPointAnnotation()
             annotations.title = location["title"] as? String
+            annotations.subtitle = location["subtitle"] as? String
             annotations.coordinate = CLLocationCoordinate2D(latitude: location["latitude"] as! CLLocationDegrees,
                                                             longitude: location["longitude"] as! CLLocationDegrees)
             
