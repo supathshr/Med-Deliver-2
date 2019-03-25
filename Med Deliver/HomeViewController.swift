@@ -112,12 +112,12 @@ class ViewController: UIViewController, UISearchBarDelegate, CLLocationManagerDe
     }
     let annotationLocations = [
         
-        ["title": "University Medical Centre", "subtitle": "Paracetamols, Lemsip", "latitude": 51.296351, "longitude":1.062152],
-        ["title": "Boots Pharmacy", "latitude":  51.274631, "longitude":1.084672],
-        ["title": "Superdrug Pharmacy", "latitude":  51.278395, "longitude":1.082779],
-        ["title": "Lloyds Pharmacy in Sainsburys", "latitude":  51.284997, "longitude":1.085479],
-        ["title": "Morrisons Pharmacy", "latitude":  51.273057, "longitude":1.063127],
-        ["title": "Asda Pharmacy", "latitude":  51.291392, "longitude":1.096899]
+        ["title": "University Medical Centre", "subtitle": "Opening time: 10:00 - 17:00", "latitude": 51.296351, "longitude":1.062152],
+        ["title": "Boots Pharmacy", "subtitle": "Opening time: 10:00 - 17:00", "latitude":  51.274631, "longitude":1.084672],
+        ["title": "Superdrug Pharmacy", "subtitle": "Opening time: 9:00 - 17:00", "latitude":  51.278395, "longitude":1.082779],
+        ["title": "Lloyds Pharmacy in Sainsburys", "subtitle": "Opening time: 10:00 - 17:00", "latitude":  51.284997, "longitude":1.085479],
+        ["title": "Morrisons Pharmacy", "subtitle": "Opening time: 10:00 - 17:00", "latitude":  51.273057, "longitude":1.063127],
+        ["title": "Asda Pharmacy", "subtitle": "Opening time: 10:00 - 17:00", "latitude":  51.291392, "longitude":1.096899]
     ]
     
     // create annotation
