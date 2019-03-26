@@ -13,6 +13,11 @@
 		07D2350E22453A7700FE8AB4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2350D22453A7700FE8AB4 /* TabBarViewController.swift */; };
 		07F26A952236B2D600FE9896 /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F26A942236B2D600FE9896 /* PasswordResetViewController.swift */; };
 		0F1442E82248FBD300A4D350 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1442E72248FBD300A4D350 /* CoreLocation.framework */; };
+		0F14432F224997F700A4D350 /* PharmacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F14432E224997F700A4D350 /* PharmacyViewController.swift */; };
+		0F42D0B522499FBC0092E271 /* moltin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F42D0B422499FBC0092E271 /* moltin.framework */; };
+		0FF3CE7B224A7AEC00188E23 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3CE79224A7AEC00188E23 /* MasterViewController.swift */; };
+		0FF3CE7C224A7AEC00188E23 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3CE7A224A7AEC00188E23 /* DetailViewController.swift */; };
+		20A932779652A59EC8C6404B /* Pods_Med_Deliver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04F7883C79B54B990FE72FB /* Pods_Med_Deliver.framework */; };
 		93273ABB21A2DBE8001665FC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93273ABA21A2DBE8001665FC /* SignInViewController.swift */; };
 		93DA8F0C21777D8200B8F8D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DA8F0B21777D8200B8F8D8 /* AppDelegate.swift */; };
 		93DA8F0E21777D8200B8F8D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DA8F0D21777D8200B8F8D8 /* HomeViewController.swift */; };
@@ -23,12 +28,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02006AAED805ED54DFFE5DEC /* Pods-Med Deliver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Med Deliver.release.xcconfig"; path = "Target Support Files/Pods-Med Deliver/Pods-Med Deliver.release.xcconfig"; sourceTree = "<group>"; };
 		075676662236BE9800AE8144 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		0756766A2236CE2700AE8144 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		07A1E37E22343E5A004CEC5E /* RegisterNewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNewAccountViewController.swift; sourceTree = "<group>"; };
 		07D2350D22453A7700FE8AB4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		07F26A942236B2D600FE9896 /* PasswordResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
 		0F1442E72248FBD300A4D350 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0F1442E9224988F900A4D350 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		0F14432E224997F700A4D350 /* PharmacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PharmacyViewController.swift; path = "/Users/supathshrestha/Desktop/MED DELIVER/V2/Med-Deliver-2/Med Deliver/PharmacyViewController.swift"; sourceTree = "<absolute>"; };
+		0F42D0B422499FBC0092E271 /* moltin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = moltin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FF3CE79224A7AEC00188E23 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		0FF3CE7A224A7AEC00188E23 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		93273ABA21A2DBE8001665FC /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		93DA8F0821777D8200B8F8D8 /* Med Deliver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Med Deliver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DA8F0B21777D8200B8F8D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +49,8 @@
 		93DA8F1521777D8200B8F8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93DA8F1721777D8200B8F8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93DA8F1F2177A2E300B8F8D8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		945C3F464067C63350008172 /* Pods-Med Deliver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Med Deliver.debug.xcconfig"; path = "Target Support Files/Pods-Med Deliver/Pods-Med Deliver.debug.xcconfig"; sourceTree = "<group>"; };
+		F04F7883C79B54B990FE72FB /* Pods_Med_Deliver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Med_Deliver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +58,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F42D0B522499FBC0092E271 /* moltin.framework in Frameworks */,
 				0F1442E82248FBD300A4D350 /* CoreLocation.framework in Frameworks */,
+				20A932779652A59EC8C6404B /* Pods_Med_Deliver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C62B07484DC56D7B3155D4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				945C3F464067C63350008172 /* Pods-Med Deliver.debug.xcconfig */,
+				02006AAED805ED54DFFE5DEC /* Pods-Med Deliver.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		0F1442E62248FBD300A4D350 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F42D0B422499FBC0092E271 /* moltin.framework */,
 				0F1442E72248FBD300A4D350 /* CoreLocation.framework */,
+				F04F7883C79B54B990FE72FB /* Pods_Med_Deliver.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -66,6 +92,7 @@
 				93DA8F0A21777D8200B8F8D8 /* Med Deliver */,
 				93DA8F0921777D8200B8F8D8 /* Products */,
 				0F1442E62248FBD300A4D350 /* Frameworks */,
+				0C62B07484DC56D7B3155D4D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,7 +107,10 @@
 		93DA8F0A21777D8200B8F8D8 /* Med Deliver */ = {
 			isa = PBXGroup;
 			children = (
+				0FF3CE7A224A7AEC00188E23 /* DetailViewController.swift */,
+				0FF3CE79224A7AEC00188E23 /* MasterViewController.swift */,
 				93DA8F0B21777D8200B8F8D8 /* AppDelegate.swift */,
+				0F14432E224997F700A4D350 /* PharmacyViewController.swift */,
 				07D2350D22453A7700FE8AB4 /* TabBarViewController.swift */,
 				93DA8F0D21777D8200B8F8D8 /* HomeViewController.swift */,
 				93273ABA21A2DBE8001665FC /* SignInViewController.swift */,
@@ -93,6 +123,7 @@
 				93DA8F1421777D8200B8F8D8 /* LaunchScreen.storyboard */,
 				93DA8F1721777D8200B8F8D8 /* Info.plist */,
 				93DA8F1F2177A2E300B8F8D8 /* Constant.swift */,
+				0F1442E9224988F900A4D350 /* BridgingHeader.h */,
 			);
 			path = "Med Deliver";
 			sourceTree = "<group>";
@@ -104,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93DA8F1A21777D8200B8F8D8 /* Build configuration list for PBXNativeTarget "Med Deliver" */;
 			buildPhases = (
+				170CE8B26FB7AC2A82480BFF /* [CP] Check Pods Manifest.lock */,
 				93DA8F0421777D8200B8F8D8 /* Sources */,
 				93DA8F0521777D8200B8F8D8 /* Frameworks */,
 				93DA8F0621777D8200B8F8D8 /* Resources */,
+				FBCBBB00FD2F30AEE4573C4D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,12 +196,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		170CE8B26FB7AC2A82480BFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Med Deliver-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBCBBB00FD2F30AEE4573C4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Med Deliver/Pods-Med Deliver-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Moltin/moltin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/moltin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Med Deliver/Pods-Med Deliver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		93DA8F0421777D8200B8F8D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F14432F224997F700A4D350 /* PharmacyViewController.swift in Sources */,
 				93DA8F0E21777D8200B8F8D8 /* HomeViewController.swift in Sources */,
+				0FF3CE7B224A7AEC00188E23 /* MasterViewController.swift in Sources */,
+				0FF3CE7C224A7AEC00188E23 /* DetailViewController.swift in Sources */,
 				07F26A952236B2D600FE9896 /* PasswordResetViewController.swift in Sources */,
 				07A1E37F22343E5A004CEC5E /* RegisterNewAccountViewController.swift in Sources */,
 				93DA8F0C21777D8200B8F8D8 /* AppDelegate.swift in Sources */,
@@ -318,12 +401,18 @@
 		};
 		93DA8F1B21777D8200B8F8D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 945C3F464067C63350008172 /* Pods-Med Deliver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TFK38NR9BZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moltin\"",
+				);
 				INFOPLIST_FILE = "Med Deliver/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,6 +420,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.supathshrestha.Med-Deliver12";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Med Deliver/BridgingHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,12 +428,18 @@
 		};
 		93DA8F1C21777D8200B8F8D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02006AAED805ED54DFFE5DEC /* Pods-Med Deliver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TFK38NR9BZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moltin\"",
+				);
 				INFOPLIST_FILE = "Med Deliver/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,6 +447,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.supathshrestha.Med-Deliver12";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Med Deliver/BridgingHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
