@@ -18,17 +18,21 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //initialze the SDK - put the store ID as a string.
+//
         let moltin: Moltin = Moltin(withClientID: "pPg9n2O74ZA3gH7Lm7WK5LqgvwwzBKjl9KXbl2740l")
+  
         
         // Do any additional setup after loading the view, typically from a nib.
-        navigationItem.leftBarButtonItem = editButtonItem
-
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
-        navigationItem.rightBarButtonItem = addButton
+        
         if let split = splitViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+        
+        // Make a call to fetch the pharmacy products.
+        
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {

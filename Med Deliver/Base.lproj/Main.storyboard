@@ -808,8 +808,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UkZ-PT-EM1">
-                                <rect key="frame" x="0.0" y="64" width="375" height="491"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UkZ-PT-EM1">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <connections>
                                     <outlet property="delegate" destination="2tS-tK-wxu" id="Hbx-EC-WCx"/>
                                 </connections>
@@ -850,6 +850,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="cNH-t1-Xxa" kind="relationship" relationship="viewControllers" id="d6B-41-AKu"/>
+                        <segue destination="GsW-Sj-ISR" kind="relationship" relationship="viewControllers" id="kxE-CR-v8r"/>
                         <segue destination="WsP-i8-b15" kind="relationship" relationship="viewControllers" id="SGc-Iv-TMN"/>
                     </connections>
                 </tabBarController>
@@ -874,7 +875,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="frB-zJ-Jf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3857" y="189"/>
+            <point key="canvasLocation" x="3817" y="189"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Bvn-2R-9J2">
@@ -894,7 +895,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKk-Ph-fkv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4481" y="1666"/>
+            <point key="canvasLocation" x="2958" y="1741"/>
         </scene>
         <!--Master-->
         <scene sceneID="lIO-5m-Dee">
@@ -946,10 +947,11 @@
             </objects>
             <point key="canvasLocation" x="7462" y="12"/>
         </scene>
-        <!--Split View Controller-->
+        <!--Pharmacy-->
         <scene sceneID="8yB-Qa-rAL">
             <objects>
                 <splitViewController id="GsW-Sj-ISR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pharmacy" image="icons8-home-page-30" id="Pg0-iL-1LO"/>
                     <toolbarItems/>
                     <connections>
                         <segue destination="aj0-v3-rBz" kind="relationship" relationship="masterViewController" id="wdR-aF-dRk"/>
@@ -958,7 +960,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zyA-X7-L0y" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5740" y="-347"/>
+            <point key="canvasLocation" x="4590" y="923"/>
         </scene>
         <!--Master-->
         <scene sceneID="pru-PF-Lhl">
@@ -1022,6 +1024,7 @@
     </scenes>
     <resources>
         <image name="Med Deliver Logo" width="616" height="164.66667175292969"/>
+        <image name="icons8-home-page-30" width="30" height="30"/>
         <image name="icons8-settings-30" width="30" height="30"/>
         <image name="icons8-user-filled-90" width="90" height="90"/>
         <image name="pin30." width="30" height="30"/>
