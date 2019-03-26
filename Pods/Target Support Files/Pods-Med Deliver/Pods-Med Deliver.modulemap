@@ -1,0 +1,6 @@
+framework module Pods_Med_Deliver {
+  umbrella header "Pods-Med Deliver-umbrella.h"
+
+  export *
+  module * { export * }
+}
