@@ -8,6 +8,9 @@
 
 import UIKit
 
+
+// TAB BAR for the main page with three tabs: Map, Pharmacy, Settings
+
 class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {

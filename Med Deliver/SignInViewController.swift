@@ -16,6 +16,27 @@ class SignInViewController: UIViewController {
     
     @IBAction func SignInButtonTapped(_ sender: Any) {
         print ("Sign in Button Tapped")
+    
+        //Create Activity Indicator
+        let myActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle:         UIActivityIndicatorViewStyle.gray)
+        
+        // Position Activity Indicator in the center of the main view
+        myActivityIndicator.center = view.center
+        
+        // If needed, you can prevent Acivity Indicator from hiding when stopAnimating() is called
+        myActivityIndicator.hidesWhenStopped = false
+        
+        // Start Activity Indicator
+        myActivityIndicator.startAnimating()
+        
+        // Call stopAnimating() when need to stop activity indicator
+        //myActivityIndicator.stopAnimating()
+        
+        
+        view.addSubview(myActivityIndicator)
+        
+        
+        
         // prepare json data
         let json: [String: Any] = [
             "requestType": "authentication",

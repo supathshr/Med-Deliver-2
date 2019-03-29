@@ -1,6 +1,6 @@
 //
 //  DetailViewController.swift
-//  pharmacy
+//  Pharmacy stores using Molten
 //
 //  Created by Supath Shrestha on 25/03/2019.
 //  Copyright © 2019 Supath Shrestha. All rights reserved.

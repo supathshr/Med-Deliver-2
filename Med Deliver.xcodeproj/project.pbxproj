@@ -13,10 +13,10 @@
 		07D2350E22453A7700FE8AB4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2350D22453A7700FE8AB4 /* TabBarViewController.swift */; };
 		07F26A952236B2D600FE9896 /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F26A942236B2D600FE9896 /* PasswordResetViewController.swift */; };
 		0F1442E82248FBD300A4D350 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1442E72248FBD300A4D350 /* CoreLocation.framework */; };
-		0F14432F224997F700A4D350 /* PharmacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F14432E224997F700A4D350 /* PharmacyViewController.swift */; };
 		0F42D0B522499FBC0092E271 /* moltin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F42D0B422499FBC0092E271 /* moltin.framework */; };
 		0FF3CE7B224A7AEC00188E23 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3CE79224A7AEC00188E23 /* MasterViewController.swift */; };
 		0FF3CE7C224A7AEC00188E23 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3CE7A224A7AEC00188E23 /* DetailViewController.swift */; };
+		0FF3CEBB224B063100188E23 /* bootsPharmacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF3CEBA224B063100188E23 /* bootsPharmacy.swift */; };
 		20A932779652A59EC8C6404B /* Pods_Med_Deliver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04F7883C79B54B990FE72FB /* Pods_Med_Deliver.framework */; };
 		93273ABB21A2DBE8001665FC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93273ABA21A2DBE8001665FC /* SignInViewController.swift */; };
 		93DA8F0C21777D8200B8F8D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DA8F0B21777D8200B8F8D8 /* AppDelegate.swift */; };
@@ -36,10 +36,10 @@
 		07F26A942236B2D600FE9896 /* PasswordResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
 		0F1442E72248FBD300A4D350 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0F1442E9224988F900A4D350 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
-		0F14432E224997F700A4D350 /* PharmacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PharmacyViewController.swift; path = "/Users/supathshrestha/Desktop/MED DELIVER/V2/Med-Deliver-2/Med Deliver/PharmacyViewController.swift"; sourceTree = "<absolute>"; };
 		0F42D0B422499FBC0092E271 /* moltin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = moltin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF3CE79224A7AEC00188E23 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		0FF3CE7A224A7AEC00188E23 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0FF3CEBA224B063100188E23 /* bootsPharmacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bootsPharmacy.swift; sourceTree = "<group>"; };
 		93273ABA21A2DBE8001665FC /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		93DA8F0821777D8200B8F8D8 /* Med Deliver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Med Deliver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DA8F0B21777D8200B8F8D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,11 +110,11 @@
 				0FF3CE7A224A7AEC00188E23 /* DetailViewController.swift */,
 				0FF3CE79224A7AEC00188E23 /* MasterViewController.swift */,
 				93DA8F0B21777D8200B8F8D8 /* AppDelegate.swift */,
-				0F14432E224997F700A4D350 /* PharmacyViewController.swift */,
 				07D2350D22453A7700FE8AB4 /* TabBarViewController.swift */,
 				93DA8F0D21777D8200B8F8D8 /* HomeViewController.swift */,
 				93273ABA21A2DBE8001665FC /* SignInViewController.swift */,
 				93DA8F0F21777D8200B8F8D8 /* Main.storyboard */,
+				0FF3CEBA224B063100188E23 /* bootsPharmacy.swift */,
 				0756766A2236CE2700AE8144 /* HomePageViewController.swift */,
 				075676662236BE9800AE8144 /* IndexViewController.swift */,
 				07F26A942236B2D600FE9896 /* PasswordResetViewController.swift */,
@@ -162,6 +162,11 @@
 				TargetAttributes = {
 					93DA8F0721777D8200B8F8D8 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -248,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F14432F224997F700A4D350 /* PharmacyViewController.swift in Sources */,
 				93DA8F0E21777D8200B8F8D8 /* HomeViewController.swift in Sources */,
 				0FF3CE7B224A7AEC00188E23 /* MasterViewController.swift in Sources */,
 				0FF3CE7C224A7AEC00188E23 /* DetailViewController.swift in Sources */,
@@ -259,6 +263,7 @@
 				93273ABB21A2DBE8001665FC /* SignInViewController.swift in Sources */,
 				075676672236BE9800AE8144 /* IndexViewController.swift in Sources */,
 				07D2350E22453A7700FE8AB4 /* TabBarViewController.swift in Sources */,
+				0FF3CEBB224B063100188E23 /* bootsPharmacy.swift in Sources */,
 				93DA8F202177A2E300B8F8D8 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

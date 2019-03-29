@@ -2,13 +2,16 @@
 //  RegisterNewAccountViewController.swift
 //  Med Deliver
 //
-//  Created by Omar El-Hamzawi on 09/03/2019.
+//  Created by Supath Shrestha on 02/12/2019.
 //  Copyright © 2019 Supath Shrestha. All rights reserved.
 //
 
 import UIKit
 
 class RegisterNewAccountViewController: UIViewController {
+    
+    
+    // BUTTONS for the text fields
     
     @IBOutlet weak var FirstNameTextField: UITextField!
     
@@ -31,6 +34,48 @@ class RegisterNewAccountViewController: UIViewController {
     
     @IBAction func CreateAccountButtonTapped(_ sender: Any) {
         print ("Create Account button tapped")
+       
+        //Validate Passwords Match
+        if (FirstNameTextField.text?.isEmpty)! ||
+            (LastNameTextFIeld.text?.isEmpty)! ||
+            (GenderTextField.text?.isEmpty)! ||
+            (DateOfBirthTextField.text?.isEmpty)! ||
+            (EmailAddressTextField.text?.isEmpty)! ||
+            (PasswordTextField.text?.isEmpty)! ||
+            (ConfirmPasswordTextField.text?.isEmpty)!
+        {
+            //Display Alert Message and Return
+            displayMessage(userMessage: "All fields are required to be filled in")
+            return
+        }
+        //Validate Password
+        if((PasswordTextField.text?.elementsEqual(ConfirmPasswordTextField.text!))! != true)
+            
+        {
+            //Display Alert Message and Return
+            displayMessage(userMessage: "Make sure your passwords match")
+            return
+            
+        }
+        //Create Activity Indicator
+        let myActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle:         UIActivityIndicatorViewStyle.gray)
+        
+        // Position Activity Indicator in the center of the main view
+        myActivityIndicator.center = view.center
+        
+        // If needed, you can prevent Acivity Indicator from hiding when stopAnimating() is called
+        myActivityIndicator.hidesWhenStopped = false
+        
+        // Start Activity Indicator
+        myActivityIndicator.startAnimating()
+        
+        // Call stopAnimating() when need to stop activity indicator
+        //myActivityIndicator.stopAnimating()
+        
+        
+        view.addSubview(myActivityIndicator)
+        
+        
         // prepare json data
         let json: [String: Any] = [
             "requestType": "register",
